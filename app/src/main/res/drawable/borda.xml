@@ -14,10 +14,6 @@
         android:right="10dp"
         android:top="10dp" />
 
-    <gradient android:startColor="#fff"
-        android:angle="20"
-        android:type="radial"
-        android:gradientRadius="50dp"
-        android:endColor="#BF9999" />
+
 
 </shape>
