@@ -8,6 +8,7 @@
     tools:context=".componenteActivity">
 
     <EditText
+        android:background="@drawable/borda"
         android:drawableRight="@drawable/ic_baseline_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +18,7 @@
         />
 
     <EditText
+        android:background="@drawable/borda"
         android:drawableRight="@drawable/ic_baseline_lock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
