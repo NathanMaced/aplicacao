@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#55D128"
+    android:background="@drawable/logo"
     android:orientation="vertical"
     tools:context=".componenteActivity">
 
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="20dp"
-        android:background="#8699D1">
+        android:background="#4B8699D1">
 
 
     <EditText
