@@ -9,8 +9,8 @@
     tools:context=".componenteActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="#128699D1"
         android:orientation="vertical">
@@ -23,8 +23,7 @@
             android:drawableEnd="@drawable/ic_baseline_email"
             android:hint="@string/insira_seu_email"
             android:inputType="textEmailAddress"
-            android:maxLength="100"
-            android:autofillHints="" />
+            android:maxLength="100" />
 
         <EditText
             android:layout_width="match_parent"
@@ -33,31 +32,32 @@
             android:drawableEnd="@drawable/ic_baseline_lock"
             android:hint="@string/insira_sua_senha"
             android:inputType="textPassword"
-            android:maxLength="100"
-            android:autofillHints="" />
+            android:maxLength="100" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:counterMaxLength="100"
             app:endIconMode="clear_text"
             app:startIconContentDescription="Inserir Email"
-            app:startIconDrawable="@drawable/ic_baseline_email" >
+            app:startIconDrawable="@drawable/ic_baseline_email">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:counterMaxLength="100"
             app:endIconMode="password_toggle"
             app:startIconContentDescription="Inserir sua senha"
-            app:startIconDrawable="@drawable/ic_baseline_lock" >
+            app:startIconDrawable="@drawable/ic_baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -67,6 +67,12 @@
 
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
 
 
     </LinearLayout>
