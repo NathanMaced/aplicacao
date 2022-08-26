@@ -39,17 +39,18 @@
             android:layout_height="wrap_content"
             app:endIconMode="clear_text"
             app:startIconContentDescription="Inserir Email"
-            app:startIconDrawable="@drawable/ic_baseline_email" />
+            app:startIconDrawable="@drawable/ic_baseline_email" >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
-        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-
-</LinearLayout>
 
     </LinearLayout>
+
+</LinearLayout>
