@@ -34,15 +34,22 @@
             android:inputType="textPassword"
             android:maxLength="100" />
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:startIconContentDescription="Inserir Email"
+            app:startIconDrawable="@drawable/ic_baseline_email" />
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
 
+        </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputEditText>
-
-
-    </LinearLayout>
 
 </LinearLayout>
+
+    </LinearLayout>
